@@ -33,6 +33,7 @@ class _TabsScreenState extends State<TabsScreen> {
       appBar: AppBar(
         title: Text(_pages[_selectPageIndex]['title'] as String),
       ),
+      drawer: Drawer(),
       body: _pages[_selectPageIndex]['page'] as Widget,
       bottomNavigationBar: BottomNavigationBar(
         onTap: _selectPage,
@@ -47,7 +48,7 @@ class _TabsScreenState extends State<TabsScreen> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.star),
-            title: Text('Favorite'),
+            title: Text('Favorites'),
           )
         ],
       ),
