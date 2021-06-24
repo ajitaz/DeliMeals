@@ -15,18 +15,18 @@ class FavoritesScreen extends StatelessWidget {
       );
     } else {
       return ListView.builder(
-          itemBuilder: (ctx, index) {
-            return MealItem(
-              id: favoriteMeals[index].id,
-              imageUrl: favoriteMeals[index].imageUrl,
-              complexity: favoriteMeals[index].complexity,
-              duration: favoriteMeals[index].duration,
-              title: favoriteMeals[index].title,
-              affordability: favoriteMeals[index].affordability,
-            );
-          },
-          itemCount: favoriteMeals!.length,
-        );
+        itemBuilder: (ctx, index) {
+          return MealItem(
+            id: favoriteMeals[index].id,
+            imageUrl: favoriteMeals[index].imageUrl,
+            complexity: favoriteMeals[index].complexity,
+            duration: favoriteMeals[index].duration,
+            title: favoriteMeals[index].title,
+            affordability: favoriteMeals[index].affordability,
+          );
+        },
+        itemCount: favoriteMeals!.length,
+      );
     }
   }
 }
